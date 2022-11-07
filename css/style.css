@@ -1,3 +1,9 @@
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
 .header {
   background-color: var(--white-color);
@@ -7,6 +13,7 @@
   font-family: 'Releway', sans-serif;
   font-weight: 700;
   font-size: 26px;
+  padding: 24px 92px 2px 15px;
   line-height: 1.2;
   color: var(--black-color);
 }
@@ -15,9 +22,31 @@
   color: var(--accent-color);
 }
 
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-line {
+  border-bottom: 10px solid #D9D9D9;
+  margin-bottom: 13px;
+}
+
 .nav-item {
+  display: flex;
+  padding-top: 32px;
   letter-spacing: 0.02em;
   font-weight: 500;
+}
+
+.nav-items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-items:nth-child(3) {
+  margin-right: 345px;
+  color: red
 }
 
 .nav-items .current {
@@ -29,21 +58,22 @@
   color: var(--title-text-color);
 }
 
+.contact {
+  margin-right: 15px;
+}
+
 .nav-email,
 .nav-tel {
   color: var(--primary-text-color);
   line-height: 1.1;
 }
 
-a:hover,
-a:focus {
-  color: var(--accent-color);
-}
-
 .title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
+  /* padding-top: 200px; */
+  margin-bottom: 30px;
   letter-spacing: 0.06em;
   color: var(--white-color);
   text-transform: uppercase;
@@ -57,51 +87,124 @@ a:focus {
 .section-title {
   font-size: 36px;
   line-height: 1.2;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .solutions {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 94px;
   background-color: var(--background-dark-color);
   text-align: center;
+  /* min-height: 600px; */
 }
 
 .solutions-btn {
+  padding: 10px 32px;
+  text-align: center;
+  min-width: 216px;
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.9;
   background-color: var(--accent-color);
   color: var(--white-color);
+  /* border-style: none; */
+}
+
+.characteristic,
+.work {
+  margin-bottom: 94px;
+}
+
+.characteristic {
+  padding-left: 25px;
 }
 
 .characteristic-subtitle {
+  font-size: 14px;
+  margin-bottom: 10px;
   line-height: 1.1;
   text-transform: uppercase;
 }
+
+.characteristic-item {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.characteristic-items {
+  max-width: 270px;
+  margin-right: 30px;
+}
+
 .characteristic-text {
   line-height: 1.7;
 }
 
+.work-item {
+  display: flex;
+  justify-content: space-around;
+}
+
 .team {
+  padding-top: 94px;
   background-color: var(--background-semi-dark);
+  padding-bottom: 94px;
+}
+
+.team-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-items {
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+    0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.team-img {
+  margin-bottom: 30px;
 }
 
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .footer {
+  padding-left: 35px;
+  padding-top: 55px;
+  padding-bottom: 60px;
   background-color: var(--background-dark-color);
 }
 
 address {
   font-style: normal;
+}
+
+.footer-logo {
+  padding: 0;
+}
+
+.footer-address {
+  padding-bottom: 9px;
+  padding-top: 10px
+}
+
+.footer-contact {
+  padding-bottom: 9px;
 }
 
 .footer-logo,
@@ -116,16 +219,83 @@ address {
 }
 
 /* стили для страницы портфолио */
-.work-text {
-  font-size: 16px;
-  line-height: 1.9;
-  color: var(--primary-text-color);
+.portfolio-logo {
+  padding: 24px 93px 25px 15px;
+}
+
+.portfolio-nav,
+.portfolio-contact {
+  padding-bottom: 32px;
+}
+
+.header-underline {
+  border-bottom: 1px solid #ECECEC;
+  ;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.portfolio {
+  padding-top: 94px;
+  margin-bottom: 64px;
+}
+
+.portfolio-btn {
+  padding: 6px 22px;
+}
+
+.portfolio-work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-galary {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
+}
+
+.portfolio-galary:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-items {
+  margin-right: 8px;
+}
+
+.descr {
+  padding-left: 30px;
+}
+
+.work-img {
+  margin-bottom: 20px;
 }
 
 .work-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+}
+
+.work-text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
