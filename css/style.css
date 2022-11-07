@@ -13,7 +13,7 @@
   font-family: 'Releway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  padding: 24px 92px 2px 15px;
+  padding: 24px 92px 2px 5px;
   line-height: 1.2;
   color: var(--black-color);
 }
@@ -220,7 +220,7 @@ address {
 
 /* стили для страницы портфолио */
 .portfolio-logo {
-  padding: 24px 93px 25px 15px;
+  padding: 24px 93px 25px 4px;
 }
 
 .portfolio-nav,
