@@ -35,11 +35,6 @@
   align-items: center;
 }
 
-.header-line {
-  /* border-bottom: 10px solid #D9D9D9;
-  margin-bottom: 13px; */
-}
-
 .nav-item {
   display: flex;
   /* padding-top: 32px; */
@@ -51,11 +46,6 @@
   margin-right: 50px;
 }
 
-.nav-items:nth-child(3) {
-  /* margin-right: 345px;
-  color: red */
-}
-
 .nav-items .current {
   color: var(--accent-color);
 }
@@ -63,11 +53,8 @@
 .nav-link {
   line-height: 1.1;
   padding-top: 32px;
-
   color: var(--title-text-color);
 }
-
-.contact {}
 
 .nav-email,
 .nav-tel {
@@ -79,7 +66,6 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  /* padding-top: 200px; */
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   color: var(--white-color);
@@ -101,10 +87,8 @@
 .solutions {
   padding-top: 200px;
   padding-bottom: 200px;
-  /* margin-bottom: 94px; */
   background-color: var(--background-dark-color);
   text-align: center;
-  /* min-height: 600px; */
 }
 
 .solutions-btn {
@@ -116,16 +100,11 @@
   line-height: 1.9;
   background-color: var(--accent-color);
   color: var(--white-color);
-  /* border-style: none; */
 }
 
 .characteristic {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.characteristic {
-  /* padding-left: 25px; */
 }
 
 .characteristic-subtitle {
@@ -137,7 +116,6 @@
 
 .characteristic-item {
   display: flex;
-  /* margin-bottom: 94px; */
 }
 
 .characteristic-items {
@@ -161,7 +139,6 @@ img {
 
 .work-item {
   display: flex;
-  /* justify-content: space-around; */
   gap: 30px;
 }
 
@@ -182,10 +159,6 @@ img {
     0px 2px 1px rgb(0 0 0 / 20%);
 }
 
-.team-img {
-  /* margin-bottom: 30px; */
-}
-
 .team-info {
   padding: 30px 10px;
 }
@@ -201,12 +174,10 @@ img {
 .team-text {
   font-size: 16px;
   line-height: 1.2;
-  /* margin-bottom: 30px; */
   text-align: center;
 }
 
 .footer {
-  /* padding-left: 35px; */
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-dark-color);
@@ -217,7 +188,6 @@ address {
 }
 
 .footer-logo {
-  /* margin-bottom: 20px; */
   padding: 0;
 }
 
@@ -252,7 +222,6 @@ address {
 
 .header-underline {
   border-bottom: 1px solid #ECECEC;
-  ;
 }
 
 .sr-only {
@@ -285,7 +254,6 @@ address {
 .portfolio-galary {
   margin-right: 30px;
   margin-bottom: 30px;
-  /* border: 1px solid #EEEEEE; */
 }
 
 .portfolio-galary:nth-child(3n) {
@@ -300,14 +268,6 @@ address {
 
 .portfolio-items {
   margin-right: 8px;
-}
-
-.descr {
-  /* padding-left: 30px; */
-}
-
-.work-img {
-  /* margin-bottom: 20px; */
 }
 
 .portfolio-info {
