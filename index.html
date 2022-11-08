@@ -10,63 +10,64 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
 
     <!--<link rel="stylesheet" href="css/reset.css" />-->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    
-      <header class="header">
-        <div class="container">
-          <div class="nav-header header-line">
-           <a class="header-logo" href="./index.html">
-             <span class="logo">Web</span>Studio
-           </a>
+    <header class="header">
+      <div class="container">
+        <div class="nav-header header-line">
+          <nav class="nav">
+            <a class="header-logo" href="./index.html">
+              <span class="logo">Web</span>Studio
+            </a>
+            <ul class="nav-item">
+              <li class="nav-items">
+                <a class="nav-link current" href="">Студія</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
 
-        <nav class="nav">
-          <ul class="nav-item">
+          <ul class="nav-item contact">
             <li class="nav-items">
-              <a class="nav-link current" href="">Студія</a>
+              <a class="nav-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
             <li class="nav-items">
-              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" href="">Контакти</a>
+              <a class="nav-tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="nav-item contact">
-          <li class="nav-items">
-            <a class="nav-email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="nav-items">
-            <a class="nav-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
         </div>
-        </div>
-      </header>
+      </div>
+    </header>
 
-      <main class="main">
-        <section class="solutions">
-          <div class="container">
-           <h1 class="title">Ефективні рішення для<br />вашого бізнесу</h1>
-           <button class="solutions-btn btn" type="button">
-             Замовити послугу
-           </button>
-         </div>
-        </section>
-
-        <section class="characteristic">
-          <!--скрытый заголовок-->
+    <main class="main">
+      <section class="solutions">
         <div class="container">
-        <h2 class="section-title subtitle sr-only">Як ми працюємо</h2>
+          <h1 class="title">Ефективні рішення для<br />вашого бізнесу</h1>
+          <button class="solutions-btn btn" type="button">
+            Замовити послугу
+          </button>
+        </div>
+      </section>
+
+      <section class="characteristic">
+        <!--скрытый заголовок-->
+        <div class="container">
+          <h2 class="section-title subtitle sr-only">Як ми працюємо</h2>
           <ul class="characteristic-item">
             <li class="characteristic-items">
               <h3 class="characteristic-subtitle subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -101,11 +102,11 @@
               </p>
             </li>
           </ul>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="work">
-          <div class="container">
+      <section class="work">
+        <div class="container">
           <h2 class="section-title subtitle">Чим ми займаємося</h2>
           <ul class="work-item">
             <li class="work-items">
@@ -144,62 +145,71 @@
               </a>
             </li>
           </ul>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="team">
-          <div class="container">
+      <section class="team">
+        <div class="container">
           <h2 class="section-title subtitle">Наша команда</h2>
           <ul class="team-item">
             <li class="team-items">
-              <img class="team-img" 
+              <img
+                class="team-img"
                 src="./images/img_pd.jpg"
                 alt="Фотографія продуктового дизайнера"
                 width="270"
               />
-            
-              <h3 class="team-subtitle subtitle">Ігор Дем'яненко</h3>
-              <p class="team-text">Product Designer</p>
-             
+              <div class="team-info">
+                <h3 class="team-subtitle subtitle">Ігор Дем'яненко</h3>
+                <p class="team-text">Product Designer</p>
+              </div>
             </li>
 
             <li class="team-items">
-              <img class="team-img"
+              <img
+                class="team-img"
                 src="./images/img_fd.jpg"
                 alt="Фотографія фронтенд разробника"
                 width="270"
                 height="260"
               />
-              <h3 class="team-subtitle subtitle">Ольга Рєпіна</h3>
-              <p class="team-text">Frontend Developer</p>
+              <div class="team-info">
+                <h3 class="team-subtitle subtitle">Ольга Рєпіна</h3>
+                <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-items">
-              <img class="team-img"
+              <img
+                class="team-img"
                 src="./images/img_m.jpg"
                 alt="Фотографія маркетолога"
                 width="270"
                 height="260"
               />
-              <h3 class="team-subtitle subtitle">Микола Тарасов</h3>
-              <p class="team-text">Marketing</p>
+              <div class="team-info">
+                <h3 class="team-subtitle subtitle">Микола Тарасов</h3>
+                <p class="team-text">Marketing</p>
+              </div>
             </li>
             <li class="team-items">
-              <img class="team-img"
+              <img
+                class="team-img"
                 src="./images/img_ui.jpg"
                 alt="Фотографія дизайнера"
                 width="270"
                 height="260"
               />
-              <h3 class="team-subtitle subtitle">Михайло Єрмаков</h3>
-              <p class="team-text">UI Designer</p>
+              <div class="team-info">
+                <h3 class="team-subtitle subtitle">Михайло Єрмаков</h3>
+                <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="container">
-
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
         <a class="footer-logo header-logo" href="./index.html">
           <span class="logo">Web</span>Studio</a
         >
@@ -218,8 +228,7 @@
             </li>
           </ul>
         </address>
-        </div>
-      </footer>
-    
+      </div>
+    </footer>
   </body>
 </html>
