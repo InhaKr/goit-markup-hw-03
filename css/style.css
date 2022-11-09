@@ -191,20 +191,27 @@ address {
 
 .footer-logo {
   padding: 0;
+  margin-right: 0;
 }
 
 .footer-address {
   margin-bottom: 9px;
+  line-height: 1.7;
+  color: var(--white-color);
 }
 
 .footer-contact {
   margin-bottom: 9px;
 }
 
-.footer-logo,
-.footer-address {
+.footer-tel {
+  margin-bottom: 0;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
   color: var(--white-color);
-  line-height: 1.7;
 }
 
 .footer-link {
@@ -213,6 +220,11 @@ address {
 }
 
 /* стили для страницы портфолио */
+
+.header-line {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .portfolio-logo {
   padding: 24px 93px 25px 4px;
 }
@@ -270,6 +282,10 @@ address {
 
 .portfolio-items {
   margin-right: 8px;
+}
+
+.portfolio-items:last-child {
+  margin-right: 0;
 }
 
 .portfolio-info {
